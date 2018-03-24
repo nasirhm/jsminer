@@ -10,7 +10,7 @@ class Block {
     }
 
     calculateHash() {
-        return SHA1(this.index +JSON.stringify(this.data) + this.previousHash +  this.nonce).toString();
+        return SHA1(this.index+','+JSON.stringify(this.data)+','+ this.previousHash +','+  this.nonce).toString();
     }
 
     mineBlock(difficulty) {
