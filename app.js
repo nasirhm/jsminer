@@ -1,3 +1,4 @@
+npm test
 const SHA1 = require("crypto-js/sha1");
 
 class Block {
